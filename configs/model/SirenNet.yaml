@@ -1,0 +1,14 @@
+_target_: model_interface.BaselineModule
+params_model:
+  name: SIREN
+  dim_in: 3
+  dim_hidden: 512
+  dim_out: 1
+  num_layers: 5
+  w0: 1.0
+  w0_initial: 25.0
+  use_bias: True
+  final_activation: swish
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

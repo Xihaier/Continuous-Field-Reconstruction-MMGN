@@ -1,0 +1,12 @@
+defaults:
+  - _self_
+  - hydra: MMGNet # ResMLP SirenNet FFN_P FFN_G MMGNet
+  - datamodule: gst # gst sst
+  - model: MMGNet # ResMLP SirenNet FFN_P FFN_G MMGNet
+  - optim: default
+  - scheduler: default
+  - callback: default
+  - logger: wandb
+  - trainer: default
+
+seed: 3407

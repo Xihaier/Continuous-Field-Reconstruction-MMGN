@@ -1,0 +1,17 @@
+_target_: model_interface.BaselineModule
+params_model:
+  name: FFN
+  encode_method: Position
+  gauss_sigma: 7.0
+  gauss_input_size: 3
+  gauss_encoded_size: 256
+  pos_freq_const: 90
+  pos_freq_num: 220
+  net_in: 1320 # Position net_in = 6*pos_freq_num
+  net_hidden: 256 
+  net_out: 1
+  net_layers: 4
+  net_act: gelu
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

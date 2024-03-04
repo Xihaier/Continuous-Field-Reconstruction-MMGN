@@ -1,0 +1,10 @@
+_target_: data_interface.DataModule
+data_dir: data/sst/sst_data.npz
+model_name: ResMLP # ResMLP, SIREN, FFN_P FFN_G, MMGN
+pre_method: [minmax, minmax]
+reduce_dim: [[], [0]]
+task: task1 # task 1: fixed n_points,  fixed positions - task 2: random n_points, fixed positions - task 3: fixed n_points,  random positions - task 4: random n_points, random positions
+sampling_rate: [0.05, 0.05] # [0.05, 0.05] [0.25, 0.25] [0.5, 0.5]
+n_train_val: [360, 12] # sst shape   (366, 901, 1001)
+b_train_val: [2, 2]
+num_workers: 4

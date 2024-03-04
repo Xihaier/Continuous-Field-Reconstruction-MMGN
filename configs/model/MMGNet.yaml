@@ -1,0 +1,16 @@
+_target_: model_interface.MMGNetModule
+params_data: ${datamodule}
+params_model:
+  name: MMGN
+  in_size: 2 
+  hidden_size: 256
+  latent_size: 128
+  latent_init: zeros
+  out_size: 1 
+  n_layers: 5
+  input_scale: 256
+  alpha: 1
+  filter: Gabor
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}

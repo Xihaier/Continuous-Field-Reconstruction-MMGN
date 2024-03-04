@@ -1,0 +1,6 @@
+accelerator: gpu
+devices: 1
+gradient_clip_val: 0.999
+detect_anomaly: False
+check_val_every_n_epoch: 40
+max_epochs: 200

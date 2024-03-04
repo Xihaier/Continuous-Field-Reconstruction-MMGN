@@ -1,0 +1,16 @@
+name: ExponentialLR
+StepLR:
+  step_size: 3
+  gamma: 0.99
+ExponentialLR:
+  gamma: 0.99
+ReduceLROnPlateau:
+  factor: 0.1
+  patience: 10
+CyclicCosineDecayLR:
+  init_decay_epochs: 700
+  min_decay_lr: 0.0001
+  restart_interval: 500
+  restart_lr: 0.005
+  warmup_epochs: 500
+  warmup_start_lr: 0.0000001

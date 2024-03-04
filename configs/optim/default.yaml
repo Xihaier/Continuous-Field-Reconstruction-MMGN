@@ -1,0 +1,4 @@
+loss: L1Loss
+optim_alg: AdamW
+optim_lr: 0.005
+optim_wd: 1e-5

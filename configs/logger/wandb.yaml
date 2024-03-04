@@ -1,0 +1,5 @@
+wandb:
+  _target_: pytorch_lightning.loggers.wandb.WandbLogger
+  project: field-reconstruction
+  mode: 'online'
+  save_dir: ${hydra:run.dir}

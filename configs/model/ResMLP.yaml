@@ -1,0 +1,11 @@
+_target_: model_interface.BaselineModule
+params_model:
+  name: ResMLP
+  res_in_dim: 3
+  res_out_dim: 1
+  res_width: 250
+  res_depth: 6
+  net_act: gelu
+  save_dir: ${hydra:run.dir}
+params_optim: ${optim}
+params_scheduler: ${scheduler}
