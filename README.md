@@ -56,7 +56,7 @@ bash run.sh
 Performance comparison with four INR baselines on both high-fidelity climate simulation data and real-world satellite-based benchmarks. MSE is recorded. A smaller MSE denotes superior performance. For clarity, we highlight the best result in bold and underline the second-best. We have also included the promotion metric, which indicates the reduction in relative error compared to the second-best model for each task.
 
 <p align="center">
-<img src=".\img\main_results.png" height = "350" alt="" align=center />
+<img src=".\img\main_results.png" height = "370" alt="" align=center />
 <br><br>
 <b>Table 1.</b> Model performance.
 </p>
@@ -66,7 +66,7 @@ Performance comparison with four INR baselines on both high-fidelity climate sim
 Visualizations of true and reconstructed fields: (1) global surface temperature derived from multi-scale high-fidelity climate simulations and (2) sea surface temperature assimilated using satellite imagery observations. For each dataset, the first column displays the ground truth, the first row showcases predictions from different models, and the second row presents corresponding error maps relative to the reference data. In the error maps, darker pixels indicate lower error levels.
 
 <p align="center">
-<img src=".\img\showcases.png" height = "200" alt="" align=center />
+<img src=".\img\showcases.png" height = "370" alt="" align=center />
 <br><br>
 <b>Figure 3.</b> Showcases.
 </p>
