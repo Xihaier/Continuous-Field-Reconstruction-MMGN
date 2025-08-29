@@ -1,6 +1,6 @@
 defaults:
   - _self_
-  - hydra: MMGNet # ResMLP SirenNet FFN_P FFN_G MMGNet
+  - hydra: default
   - datamodule: gst # gst sst
   - model: MMGNet # ResMLP SirenNet FFN_P FFN_G MMGNet
   - optim: default
